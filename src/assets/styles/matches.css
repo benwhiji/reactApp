@@ -1,0 +1,102 @@
+/* matches.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100vh; /* Make body full viewport height */
+    background-color:blue; /* Fallback background color */
+    background-image: url('https://www.scisports.com/wp-content/uploads/2018/10/Stadium-background-e1539010664517.jpg');
+    /* Prevent scrolling */
+}
+
+.matches-container {
+    width: 100%;
+    height: 100%;
+    
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    overflow: auto; /* Allow scrolling inside container if content exceeds */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white; /* Ensure text is readable */
+}
+
+.match-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%; /* Full width */
+    max-width: 800px; /* Limit width for content */
+    overflow: auto; /* Allow scrolling if content exceeds */
+}
+
+.match-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: rgba(43, 45, 66, 0.8); /* Semi-transparent background */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.match-info {
+    width: 100%;
+}
+
+.match-date-time {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.match-teams {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+}
+
+.team-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.team-name {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.vs {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.match-venue {
+    color: #ccc;
+    text-align: center;
+}
+
+/* Styles for home and away matches */
+.home-match {
+    justify-content: flex-start;
+}
+
+.away-match {
+    justify-content: flex-end;
+}

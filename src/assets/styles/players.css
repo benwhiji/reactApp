@@ -1,0 +1,38 @@
+/* players.css */
+
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.player-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  color:white;
+  cursor: pointer;
+}
+
+.player-card img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.player-details {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #f0f0f0; /* Background color for player details */
+}
+
+.player-details img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.player-details button {
+  margin-bottom: 10px;
+}
